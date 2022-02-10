@@ -3,7 +3,7 @@
 #include <math.h>
 
 bool resultado_g(std::vector<bool> Lista){
-    if ((Lista[0]^Lista[5])^(Lista[1]^Lista[4]))// argumentos para tratamento dos dados;
+    if ((Lista[0]^Lista[5])^(Lista[2]^Lista[3]))// argumentos para tratamento dos dados;
     {
         return 1;
     }
@@ -14,7 +14,8 @@ bool resultado_g(std::vector<bool> Lista){
 }
 
 int main(){
-    int num_repeticoes=0,i=0, Num_Bits=6, Num_1=0, Num_0=0;// tamanho do array de bits;
+    int Num_Bits=6;// tamanho do array de bits;
+    int num_repeticoes=0,i=0, Num_1=0, Num_0=0;
     std::vector<bool> Lista(Num_Bits,0);
     Lista.back()=1;
     std::vector<bool> semente=Lista;
